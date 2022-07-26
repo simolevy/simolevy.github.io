@@ -19,7 +19,7 @@
   */
 }
 
- button {
+ .buttonHolder {
 			background-image: -webkit-linear-gradient(top, #f4f1ee, #fff);
 			background-image: linear-gradient(top, #f4f1ee, #fff);
 			border-radius: 50%;
