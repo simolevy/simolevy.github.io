@@ -31,6 +31,8 @@
 			width: 70px;			
 			-webkit-transition: all .1s linear;
 			transition: all .1s linear;
+	  		-ms-transform: translateY(-50%);
+  			transform: translateY(-50%);
       }
 
 body {
