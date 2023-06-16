@@ -27,6 +27,7 @@
  			height: 70px;
  			margin: 0;
  			position: absolute;
+	 		text-align: center;
  			width: 70px;			
  			position: absolute;		
  			-webkit-transition: all .1s linear;
