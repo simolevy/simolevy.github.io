@@ -1,8 +1,42 @@
-*,
+/**,
 *::before,
 *::after {
   box-sizing: border-box;
+}*/
+
+html, body, section {
+  block-size: 100%;
 }
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-of-type(even) {
+  color: #ffffff;
+  background: #5192ED;
+}
+
+section:nth-of-type(odd) {
+  color: #ffffff;
+  background: #f6aca2;
+}
+/*
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 4rem;
+}*/
+
 
 :root {
   --color-primary: #f6aca2;
@@ -10,13 +44,13 @@
   --color-tertiary: #f28b7d;
   --color-quaternary: #f07a6a;
   --color-quinary: #ee6352;
-  /*
+  
   --color-primary: #5192ED;
   --color-secondary: #69A1F0;
   --color-tertiary: #7EAEF2;
   --color-quaternary: #90BAF5;
   --color-quinary: #A2C4F5;
-  */
+  
 }
 
  .buttonHolder {
@@ -36,7 +70,7 @@
 	  		
       }
 
-body {
+/*body {
   min-height: 100vh;
   font-family: canada-type-gibson, sans-serif;
   font-weight: 300;
@@ -52,7 +86,7 @@ body {
   display: flex;
   align-content: center;
   justify-content: center;
-}
+}*/
 
 .text_shadows {
   text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
@@ -64,9 +98,9 @@ body {
   text-align: center;
   margin: 0;
   color: var(--color-primary);
-  //color: transparent;
-  //background-color: white;
-  //background-clip: text;
+  color: transparent;
+  background-color: white;
+  background-clip: text;
   animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
   letter-spacing: 0.4rem;
 }
