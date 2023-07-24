@@ -30,43 +30,52 @@ html {
   }
   /* END SCROLL BAR */
 
-/*START NAV BAR*/
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  color: #ffffff; /* Change this to your preferred text color */
-  padding: 20px 20px;
-  z-index: 100; /* Ensure the navbar is above other elements */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar li {
-  display: inline-block;
-  margin-right: 60px;
-}
-
-.navbar a {
-  color: inherit;
-  text-decoration:none;
-  font-size: 18px;
-}
-
-/* Add hover or active styles if desired */
-.navbar a:hover {
-    color: #ff6f61; /* Change this to your preferred hover color */
+  .words {
+    top: 0;
+    left: 20;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    pointer-events: none; /* This prevents the words container from interfering with interactions on the box container */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .words h1 {
+    font-size: 3em;
+    color: rgba(255, 255, 255, 0.2); /* Use a semi-transparent color for the text to make it more subtle */
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
   }
 
-/*END NAV BAR*/
+/* Your existing CSS styles */
+
+/* Add styles for the side panel */
+.side-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%; /* Adjust this value as needed to control the width of the side panel */
+  height: 101%;
+  background-color: #88af89; /* Set the background color of the side panel */
+  z-index: 2; /* Ensure the side panel appears above other elements */
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+/* Styling for the content inside the side panel */
+.side-panel h2 {
+  text-align: center;
+  padding: 20px;
+  color: #ffffff; /* Set the text color */
+  overflow: hidden;
+}
 
 section {
   scroll-snap-align: start;
@@ -79,18 +88,21 @@ section {
 .box-container {
   transition: all 1s ease-in-out;
   height: 350px;
-  width: 750px;
+  width: 650px;
   background: #fff;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /*border-radius: 15px;*/
+  /*border-radius: 15px; */
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   animation: morph 8s ease-in-out infinite;
   box-shadow: #617c62;
-
-}
+  z-index: 1;
+  position: absolute;
+  left: 60px;
+  top: 270px;
+} 
 
 section:nth-of-type(even) {
   color: #ffffff;
@@ -219,18 +231,17 @@ section:nth-of-type(odd) {
   0% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     background: linear-gradient(45deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-  } 
-  
+  }
   50% {
     border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
     background: linear-gradient(45deg, var(--color-primary) 0%, var(--color-secondary) 100%);
   }
-  
   100% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     background: linear-gradient(45deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-  } 
+  }
 }
+
 
 .scroll-down {
   opacity: 1;
@@ -288,32 +299,5 @@ section:nth-of-type(odd) {
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
-  }
-}
-
-@keyframes circle {
-  0% {
-    width: 1px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    height: 1px;
-    z-index: -1;
-    background: #eee;
-    border-radius: 100%;
-  }
-  100% {
-    background: #aaa;
-    height: 5000%;
-    width: 5000%;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 0;
   }
 }
