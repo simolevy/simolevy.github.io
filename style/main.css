@@ -152,6 +152,11 @@ html {
   text-decoration: none;
 }
 
+h2 a{
+  text-decoration: none;
+  color: #88af89;
+}
+
 h2 :hover{
   letter-spacing: 4px;
   color: #5c645d; /* Change this to your preferred hover color */
