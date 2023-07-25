@@ -3,7 +3,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="style/main.css">
-    <title>Simo's Blog</title>
+    <title>About Simo</title>
   </head>
 
 <body>
@@ -12,7 +12,7 @@
     <nav class="navbar">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#section2">About Me</a></li>
+        <li><a href="about.html">About Me</a></li>
         <li><a href="#section3">GitHub</a></li>
         <li><a href="#section4">Instagram</a></li>
         <li><a href="#section5">Blog</a></li>
@@ -42,29 +42,52 @@
 
   <div class="side-panel">
     <!-- Content for the side panel goes here -->
-    <h2> </h2>
+
+    <div class="slide-left">
+
+        <p style="font-weight: bold; font-size: large; padding-top: 200px;">helloooo <br> this is a test <br> blah blah blah blah blah <br> more blah blah. 
+        <br> This is some informationa about myself. <br> <br><br>
+        Blah blah blah blah. <br>
+        This is all a place holder. blah blah blah....<br>
+        Simo is so cool and amazing. Woop woop <br>
+        One day you will see actual information here. <br>
+        But not today! heh heh <br>
+        I just keep having to add lines to make this look good. <br>
+        Ugh. Sigh....</p>
+        </div>
   </div>
 
-  <div class="rectangle">
-    
-    <div class="text-container">
-      <h2>hello!<br> my name is </h2> <h2 style="color: #5c645d;">Simone.</h2>
 
-      <br>
-
-      <h2 style="font-size: medium;"><a href= "#projects">projects →</a> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <a href="about.html">about me →</a> </h2>
-
-    </div> 
-  </div>
-  
-  </section>
- 
+</section>
 
 </body>
 
 
-<script type="text/javascript" src="{{ url_for( filename='anim.js') }}"></script>
+<style>
 
+    div.slide-left {
+    width: 100%;
+    overflow: hidden;
+    text-align: center; /* Add this line */
+    }
+
+    div.slide-left p {
+    animation: slide-left 2s;
+    }
+    
+    
+    @keyframes slide-left {
+    from {
+        margin-left: 100%;
+        width: 300%; 
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+    }
+    </style>
 
 
 </html>
