@@ -10,23 +10,23 @@ html {
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {
-    scrollbar-width:auto;
-    scrollbar-color: #8f54a0 #ffffff;
+    scrollbar-width:thin;
+    scrollbar-color: #88af89 transparent;
   }
 
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
-    width: 3em;
+    width: .5em;
   }
 
   *::-webkit-scrollbar-track {
-    background: #ffffff;
+    background:fixed;
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: #8f54a0;
-    border-radius: 10px;
-    border: 5px solid #ffffff;
+    background-color: #88af89;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
   }
 
   .words {
@@ -58,9 +58,9 @@ html {
 /* Your existing CSS styles */
 
 .rectangle {
-  width: 800px;
-  height: 600px;
-  background: rgba(255, 255, 255, 0.753);
+  width: 700px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.992);
   position: absolute;
   z-index: 5;
   align-self: center;
@@ -79,9 +79,11 @@ html {
 
 .text-container h2 {
   font-size: 24px;
-  font-family: sans-serif;
-  color: #ffffffc4;
-  text-transform: uppercase;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  color: #88af89;
+  
 }
 
 /* Add styles for the side panel */
@@ -91,7 +93,7 @@ html {
   right: 0;
   width: 50%; /* Adjust this value as needed to control the width of the side panel */
   height: 101%;
-  background-color: #88af89; /* Set the background color of the side panel */
+  background-color: #b9d1ba; /* Set the background color of the side panel */
   z-index: 2; /* Ensure the side panel appears above other elements */
   transform: translateX(0);
   transition: transform 0.3s ease-in-out;
@@ -102,7 +104,7 @@ html {
 .side-panel h2 {
   text-align: center;
   padding: 20px;
-  color: #ffffff; /* Set the text color */
+  color: #88af89; /* Set the text color */
   overflow: hidden;
 }
 
@@ -126,7 +128,7 @@ section {
   /*border-radius: 15px; */
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   animation: morph 8s ease-in-out infinite;
-  box-shadow: #617c62;
+  box-shadow: #b2bcb2;
   z-index: 1;
   position: absolute;
   left: 60px;
@@ -152,7 +154,7 @@ section:nth-of-type(odd) {
   --color-quinary: #ee6352;
   
   --color-primary: #e9f3ff;
-  --color-secondary: #b1d3b2;
+  --color-secondary: #f2f6f2;
   --color-tertiary: #a2c7a4;
   --color-quaternary: #88af89;
   --color-quinary: #617c62;
