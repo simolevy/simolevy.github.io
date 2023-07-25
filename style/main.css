@@ -82,9 +82,52 @@ html {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: lighter;
   letter-spacing: 3px;
-  color: #88af89;
+  color: #88af89;  
+}
+
+/*START NAV BAR*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff; /* Change this to your preferred text color */
+  padding: 20px 20px;
+  z-index: 100; /* Ensure the navbar is above other elements */
+  display: flex;
+  justify-content: right;
+  font: sans-serif;
+  align-items: right;
+  background-color: inherit;
+  letter-spacing: 3px;
   
 }
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 60px;
+}
+
+.navbar a {
+  color: inherit;
+  text-decoration:none;
+  font-size: 18px;
+  font: sans-serif;
+}
+
+/* Add hover or active styles if desired */
+.navbar a:hover {
+    letter-spacing: 4px;
+    color: #5c645d; /* Change this to your preferred hover color */
+  }
+
+/*END NAV BAR*/
 
 /* Add styles for the side panel */
 .side-panel {
@@ -106,6 +149,12 @@ html {
   padding: 20px;
   color: #88af89; /* Set the text color */
   overflow: hidden;
+  text-decoration: none;
+}
+
+h2 :hover{
+  letter-spacing: 4px;
+  color: #5c645d; /* Change this to your preferred hover color */
 }
 
 section {
