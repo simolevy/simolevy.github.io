@@ -199,6 +199,15 @@ section:nth-of-type(odd) {
   background: #88af89;
 }
 
+.about-square {
+  width: 350px;
+  height: 350px;
+  background: rgba(255, 255, 255, 0.992);
+  position: absolute;
+  z-index: 4;
+  left: 220px;
+}
+
 
 :root {
   --color-primary: #f6aca2;
