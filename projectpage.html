@@ -19,21 +19,77 @@
       </ul>
     </nav> 
 
-<section>
 
 
-<section>
+<section class="container">
 
-  <div class="side-panel">
-    <!-- Content for the side panel goes here -->
-    <h2> </h2>
+  <div class="photo-column">
+    <!-- Add your photos here -->
+    <img src="path/to/photo1.jpg" alt="Project 1">
+    <img src="path/to/photo2.jpg" alt="Project 2">
+    <!-- Add more photos as needed -->
   </div>
 
-  
+  <div class="description-column">
+    <!-- Add project descriptions here -->
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>Description for Project 1 goes here.</p>
+    </div>
+    <div class="project">
+      <h3>Project 2</h3>
+      <p>Description for Project 2 goes here.</p>
+    </div>
+    <!-- Add more project descriptions as needed -->
+  </div>
+
   </section>
  
 
 </body>
+
+<style>
+/* Create two equal columns that floats next to each other */
+
+  body {
+
+    block-size: 100%;
+
+  }
+
+  /* Add this CSS to create the two-column layout */
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-column {
+  flex: 1; /* This column will take up half of the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-column img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.description-column {
+  flex: 1; /* This column will take up half of the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+</style>
 
 
 
