@@ -8,7 +8,6 @@
 
 <body>
 
-  
     <nav class="navbar">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -19,26 +18,45 @@
       </ul>
     </nav> 
 
-
-
 <section class="container">
 
   <div class="photo-column">
     <!-- Add your photos here -->
     <img src="path/to/photo1.jpg" alt="Project 1">
     <img src="path/to/photo2.jpg" alt="Project 2">
+    <img src="path/to/photo2.jpg" alt="Project 3">
     <!-- Add more photos as needed -->
   </div>
 
   <div class="description-column">
     <!-- Add project descriptions here -->
     <div class="project">
-      <h3>Project 1</h3>
-      <p>Description for Project 1 goes here.</p>
+      <h3>Botifee</h3>
+      <!-- p.ridge {border-style: ridge;}
+-->
+      <p><b>Tech Stack:</b> Python, HTML/CSS, Flask, Spotify API.</p>
+      <p><b>What is it?</b> Botifee is a chatbot integrated with the Spotify API. Using the chat interface, <br>
+      users can access their previous Spotify activity and request song reccomendations, create playlists, <br>
+      and more. </p>
+      <a href="https://github.com/simolevy/chatbot-deployment">View the GitHub →</a>
     </div>
     <div class="project">
-      <h3>Project 2</h3>
-      <p>Description for Project 2 goes here.</p>
+      <h3>Slack Client Simulator</h3>
+      <p><b>Tech Stack:</b> Java, Java Swing. </p>
+      <p><b>What is it?</b> Emerging from a classroom project, this client-server architecture chat simulator <br>
+      allows two (or more) people to connect in a bright pink chat-room and have conversations! </p>
+      <a href="https://github.com/simolevy/Slack-Simulator">View the GitHub →</a>
+    </div>
+
+    <div class="project">
+      <h3>Water Cycle - with Kittens!</h3>
+      <!-- p.ridge {border-style: ridge;}
+-->
+      <p><b>Tech Stack:</b> Unity, C#, XR Framework.</p>
+      <p><b>What is it?</b> Water Cycle (with kittens) is a Unity game intended for the Meta Quest 2 (but compatible <br>
+      with other VR devices). It's intention is to teach students about the water cycle in an interactive environment <br>
+    with meowing kittens, 3D sound-scapes and varied terrains to explore! </p>
+    <a href="https://github.com/simolevy">View the GitHub →</a>
     </div>
     <!-- Add more project descriptions as needed -->
   </div>
@@ -55,6 +73,15 @@
 
     block-size: 100%;
 
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    color: #ee6352;
   }
 
   /* Add this CSS to create the two-column layout */
@@ -81,12 +108,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .project {
   text-align: center;
   margin-bottom: 30px;
 }
+
+
 
 
 </style>
