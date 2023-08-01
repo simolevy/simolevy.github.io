@@ -22,8 +22,8 @@
 
   <div class="photo-column">
     <!-- Add your photos here -->
-    <img src="path/to/photo1.jpg" alt="Project 1">
-    <img src="path/to/photo2.jpg" alt="Project 2">
+    <img src="images/botifeeimg.png" alt="Project 1">
+    <img src="images/slacksimuphoto.png" alt="Project 2">
     <img src="path/to/photo2.jpg" alt="Project 3">
     <!-- Add more photos as needed -->
   </div>
@@ -74,6 +74,17 @@
     block-size: 100%;
 
   }
+
+  .photo-column img {
+  height: auto;
+  margin-bottom: 20px;
+  border: 5px outset white; /* Add white borders */
+  object-fit: cover; /* Maintain aspect ratio and make images square */
+  width: 500px; /* Set a fixed width to make images square */
+  height: 500px; /* Set a fixed height to make images square */
+  padding: 5px; /* Add padding to create white borders */
+}
+
 
   a {
     text-decoration: none;
