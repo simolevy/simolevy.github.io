@@ -1,5 +1,6 @@
 html, body, section {
   block-size: 100%;
+  padding-top: 80px;
 }
 
 html {
