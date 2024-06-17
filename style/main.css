@@ -93,7 +93,7 @@ html {
   width: 100%;
   color: #ffffff; /* Change this to your preferred text color */
   padding: 20px 20px;
-  z-index: 100; /* Ensure the navbar is above other elements */
+  z-index: 150; /* Ensure the navbar is above other elements */
   display: flex;
   justify-content: right;
   font: sans-serif;
